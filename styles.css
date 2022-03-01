@@ -19,22 +19,36 @@ body {
   background-color: var(--clr-grey);
   font-family: var(--font-family);
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: 1fr 7fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 5fr;
 }
 
-img{
+img {
   height: 20px;
   width: 20px;
 }
 
-button{
-  background-color: var(--clr-yellow);
-  border-radius: 10px;
-  box-shadow: none;
+button {
+  background-color: var(--clr-blue);
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--clr-grey);
+  text-align: center;
+  transition: all 0.2s;
 }
 
-input{
+button:hover {
+  border-color: var(--clr-yellow);
+  color: var(--clr-yellow);
+}
+
+input {
   border-radius: 10px;
   -webkit-border-radius: 10px;
   border: none;
@@ -58,6 +72,11 @@ input{
   grid-column-start: span 4;
 }
 
+#account{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
 #main {
   background-color: var(--clr-grey);
   grid-column-start: span 4;
@@ -70,31 +89,33 @@ input{
   margin: 1rem;
 }
 
-#header .profile{
+#header .profile {
   align-self: center;
 }
 
-.top-section img:nth-of-type(2){
+.top-section img:nth-of-type(2) {
   margin-left: auto;
 }
 
-.bottom-section > .profile{
+.bottom-section>.profile {
   height: auto;
   width: 64px;
 }
 
-.action-buttons{
+.action-buttons {
   margin-left: auto;
 }
 
 .top-section,
-.bottom-section{
+.bottom-section {
   display: flex;
   margin: 1rem 2.5rem;
   gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.card, 
+.card,
 .announcements,
 .trending {
   background-color: var(--clr-white);
@@ -102,22 +123,26 @@ input{
   padding: 0.5rem;
 }
 
-.card{
+.card {
   border-left: 10px solid var(--clr-yellow);
   padding-left: 0.5rem;
 }
 
-.cards{
+.cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
-.trending>div{
+.trending>div {
   display: flex;
   gap: 0.5rem;
 }
 
-.trending img{
+.trending img {
   align-self: center;
+}
+
+.trending p{
+  margin: 0;
 }
