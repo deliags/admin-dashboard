@@ -3,7 +3,7 @@
   --clr-white: #ECECEC;
   --clr-yellow: #fca311;
   --clr-black: #000000;
-  --clr-grey: #d3d3d3;
+  --clr-grey: #dbe3e9;
 
   --font-family: 'Fredoka', Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -20,12 +20,31 @@ body {
   font-family: var(--font-family);
   display: grid;
   grid-template-columns: repeat(5,1fr);
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 7fr;
 }
 
 img{
-  height: auto;
-  width: 32px;
+  height: 20px;
+  width: 20px;
+}
+
+button{
+  background-color: var(--clr-yellow);
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+input{
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: none;
+  border-bottom: inset;
+  border-right: inset;
+  border-color: #b9b8bb;
+  background-color: var(--clr-grey);
+  margin: 5px;
+  width: 50%;
+
 }
 
 #sidebar {
@@ -51,14 +70,54 @@ img{
   margin: 1rem;
 }
 
+#header .profile{
+  align-self: center;
+}
+
+.top-section img:nth-of-type(2){
+  margin-left: auto;
+}
+
+.bottom-section > .profile{
+  height: auto;
+  width: 64px;
+}
+
+.action-buttons{
+  margin-left: auto;
+}
+
+.top-section,
+.bottom-section{
+  display: flex;
+  margin: 1rem 2.5rem;
+  gap: 1.5rem;
+}
+
 .card, 
 .announcements,
 .trending {
   background-color: var(--clr-white);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.card{
+  border-left: 10px solid var(--clr-yellow);
+  padding-left: 0.5rem;
 }
 
 .cards{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+}
+
+.trending>div{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.trending img{
+  align-self: center;
 }
