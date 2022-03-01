@@ -3,7 +3,7 @@
   --clr-white: #ECECEC;
   --clr-yellow: #fca311;
   --clr-black: #000000;
-  --clr-grey: #e5e5e5;
+  --clr-grey: #d3d3d3;
 
   --font-family: 'Fredoka', Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -31,6 +31,7 @@ img{
 #sidebar {
   background-color: var(--clr-blue);
   grid-row-start: span 2;
+  color: var(--clr-grey);
 }
 
 #header {
@@ -39,13 +40,20 @@ img{
 }
 
 #main {
-  background-color: var(--clr-yellow);
+  background-color: var(--clr-grey);
   grid-column-start: span 4;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
 
-.card{
+#project-section,
+#news-section {
+  margin: 1rem;
+}
+
+.card, 
+.announcements,
+.trending {
   background-color: var(--clr-white);
 }
 
