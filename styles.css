@@ -4,3 +4,9 @@
   --clr-yellow: #FFC300;
   --clr-red: #FF1818;
 }
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
