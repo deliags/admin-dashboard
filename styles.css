@@ -115,6 +115,10 @@ input {
   align-items: center;
 }
 
+.title-section img{
+  height: 50px;
+  width: 50px;
+}
 .card,
 .announcements,
 .trending {
