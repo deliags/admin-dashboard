@@ -6,20 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Icons attribution -->
-  <a href="https://www.flaticon.com/free-icons/person" title="person icons">Person icons created by Freepik -
+  <!-- <a href="https://www.flaticon.com/free-icons/person" title="person icons">Person icons created by Freepik -
     Flaticon</a>
   <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a>
   <a href="https://www.flaticon.com/free-icons/avatar" title="avatar icons">Avatar icons created by Freepik -
     Flaticon</a>
   <a href="https://www.flaticon.com/free-icons/teenager" title="teenager icons">Teenager icons created by Freepik -
-    Flaticon</a>
+    Flaticon</a> -->
+
+    <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
   <title>Admin Dashboard</title>
 </head>
 
 <body>
-  <div class="sidebar">
+  <div id="sidebar">
     <div class="title-section">
       <img src="images/icons/view-dashboard-outline.png" alt="">
       <h2 id="title">Dashboard</h2>
@@ -42,7 +47,7 @@
       </ul>
     </div>
   </div>
-  <div class="header">
+  <div id="header">
     <div class="top-section">
       <img src="images/icons/magnify.png" alt="search-icon">
       <input type="text" name="search" id="search">
@@ -63,9 +68,10 @@
       </div>
     </div>
   </div>
-  <div class="main">
-    <h3 class="title">Your Projects</h3>
-    <div class="project-section">
+  <div id="main">
+    <div id="project-section">
+      <h3 class="title">Your Projects</h3>
+    <div class="cards">
       <div class="card">
         <h2 class="title">Finding who is A</h2>
         <p class="content">Please stop looking at your phone and pet me throw down all the stuff in the kitchen.</p>
@@ -77,7 +83,8 @@
       </div>
       <div class="card">
         <h2 class="title">Toby is kinda boring</h2>
-        <p class="content">Pushed the mug off the table jump on counter removed by human jump on counter again removed by human meow</p>
+        <p class="content">Pushed the mug off the table jump on counter removed by human jump on counter again removed
+          by human meow.</p>
         <div class="icons">
           <img src="images/icons/star-plus.png" alt="star-it">
           <img src="images/icons/eye-plus.png" alt="follow-it">
@@ -94,8 +101,9 @@
         </div>
       </div>
       <div class="card">
-        <h2 class="title">Finding who is A</h2>
-        <p class="content">Please stop looking at your phone and pet me throw down all the stuff in the kitchen.</p>
+        <h2 class="title">Radley Rulez</h2>
+        <p class="content">Meow for can opener to feed me swipe at owner's legs for stare out the window but roll over
+          and sun my belly.</p>
         <div class="icons">
           <img src="images/icons/star-plus.png" alt="star-it">
           <img src="images/icons/eye-plus.png" alt="follow-it">
@@ -103,13 +111,61 @@
         </div>
       </div>
       <div class="card">
-        <h2 class="title">Finding who is A</h2>
-        <p class="content">Please stop looking at your phone and pet me throw down all the stuff in the kitchen.</p>
+        <h2 class="title">Must be the Best</h2>
+        <p class="content">Small kitty warm kitty little balls of fur. Found somthing move i bite it tail sit and stare
+          under the bed proudly present butt to human.</p>
         <div class="icons">
           <img src="images/icons/star-plus.png" alt="star-it">
           <img src="images/icons/eye-plus.png" alt="follow-it">
           <img src="images/icons/source-branch.png" alt="branch-it">
         </div>
+      </div>
+      <div class="card">
+        <h2 class="title">I'm Stressed and I know it</h2>
+        <p class="content">Small kitty warm kitty little balls of fur. Found somthing move i bite it tail sit and stare
+          under the bed proudly present butt to human.</p>
+        <div class="icons">
+          <img src="images/icons/star-plus.png" alt="star-it">
+          <img src="images/icons/eye-plus.png" alt="follow-it">
+          <img src="images/icons/source-branch.png" alt="branch-it">
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <div class="news-section">
+      <h3 class="title">Announcements</h3>
+      <div class="announcements">
+        <div>
+          <h4>Site Maintenance</h4>
+          <p>Carefully drink from water glass and then spill it everywhere and proceed to lick the puddle meow meow or
+            attack like a vicious monster.</p>
+        </div>
+        <div>
+          <h4>Community Share Day</h4>
+          <p>Carefully drink from water glass and then spill it everywhere and proceed to lick the puddle meow meow or
+            attack like a vicious monster.</p>
+        </div>
+        <div>
+          <h4>Updated Privacy Policy</h4>
+          <p>Carefully drink from water glass and then spill it everywhere and proceed to lick the puddle meow meow or
+            attack like a vicious monster.</p>
+        </div>
+      </div>
+      <h3 class="title">Trending</h3>
+      <div class="trending">
+        <img src="images/profile-pics/man.png" alt="profile">
+        <h4>@caleb</h4>
+        <p>Techno-boy-toy</p>
+        <img src="images/profile-pics/woman.png" alt="profile">
+        <h4>@aria</h4>
+        <p>Edgy and c00l</p>
+        <img src="images/profile-pics/teenager.png" alt="profile">
+        <h4>@mike</h4>
+        <p>Angsty for all reasons</p>
+        <img src="images/profile-pics/profile.png" alt="profile">
+        <h4>@peter</h4>
+        <p>A dad for all</p>
       </div>
     </div>
   </div>
