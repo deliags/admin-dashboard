@@ -83,6 +83,7 @@ ul img{
 #header {
   background-color: var(--clr-light);
   grid-column-start: span 4;
+  padding: 1rem;
 }
 
 #account{
